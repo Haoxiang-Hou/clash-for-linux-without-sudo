@@ -1,3 +1,3 @@
 #!/bin/bash
-tmux new-session -d -s clash '/path/to/clash-linux-amd64 -d /path/to/conf'
+tmux new-session -d -s clash './bin/clash-linux-amd64 -d ./conf 2>&1 | tee -a ./logs/myclash.log'
 
