@@ -56,8 +56,11 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,google.com,PROXY
   - DOMAIN-SUFFIX,facebook.com,PROXY
+  - DOMAIN-SUFFIX,huggingface.co,PROXY
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
+  - DOMAIN-SUFFIX,pypi.org,PROXY
   - GEOIP,CN,DIRECT
-  - MATCH,DIRECT
+  - MATCH,PROXY
 
 # 日志配置
 log-level: debug # 日志级别，info 为一般信息，还有 debug、warning、error 等级别
