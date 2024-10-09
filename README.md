@@ -74,6 +74,16 @@ log-level: debug # 日志级别，info 为一般信息，还有 debug、warning�
 chmod +x bin/clash-linux-amd64
 ```
 
+## 设置环境变量
+
+在运行Clash之前,请设置以下环境变量:
+
+```bash
+export HTTP_PROXY=http://127.0.0.1:7890
+export HTTPS_PROXY=http://127.0.0.1:7890
+export NO_PROXY=localhost,127.0.0.1
+```
+
 ## 运行Clash
 
 最后，使用以下命令来启动Clash：
